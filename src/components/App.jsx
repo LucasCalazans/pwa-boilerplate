@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 const App = ({ appName, children }) => (
   <main className="app-main">
-  {console.log(children)}
     <header className="app-header">{appName}</header>
     <div className="app-container">{children}</div>
   </main>

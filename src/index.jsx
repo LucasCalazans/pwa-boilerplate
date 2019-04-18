@@ -8,8 +8,6 @@ import Routes from '@/routes';
 import App from '@/components/App';
 import './assets/css/styles.scss';
 
-console.log(Routes);
-
 ReactDOM.render(
   <Router>
     <Provider store={store}>
