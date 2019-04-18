@@ -5,7 +5,6 @@
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --mode development --port 3000 --https --host=0.0.0.0 --open",
-        "help": "webpack-dev-server -h",
         "build": "webpack --mode production",
         "test": "jest"
     },
@@ -24,6 +23,7 @@
     "devDependencies": {
         "@babel/cli": "^7.4.3",
         "@babel/core": "^7.4.3",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
         "@babel/plugin-transform-arrow-functions": "^7.2.0",
         "@babel/plugin-transform-runtime": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
@@ -31,6 +31,7 @@
         "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^24.7.1",
         "babel-loader": "^8.0.5",
+        "copy-webpack-plugin": "^5.0.2",
         "css-loader": "^2.1.1",
         "enzyme": "^3.9.0",
         "enzyme-adapter-react-16": "^1.12.1",
