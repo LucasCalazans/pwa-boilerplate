@@ -1,14 +1,15 @@
 # A complete PWA Boilerplate 
 This boilerplate uses: 
 
-* React 16
-* Redux
+* React 16.8
+* Redux 4
 * React Router 4
 * Babel 7
 * Webpack 4
 * Sass
 * Jest
 * Enzyme
+* Prettier
 
 # Usage
 
