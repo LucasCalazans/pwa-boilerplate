@@ -1,16 +1,4 @@
-const INITIAL_STATE = {
-  appName: 'PWA Boilerplate',
-  reduxStoreCounter: 1,
-};
+import { combineReducers } from 'redux';
+import home from './home';
 
-export default (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    case 'CHANGE_REDUX_STORE_COUNTER':
-      return {
-        ...state,
-        reduxStoreCounter: action.reduxStoreCounter,
-      };
-    default:
-      return state;
-  }
-};
+export default combineReducers({ home });

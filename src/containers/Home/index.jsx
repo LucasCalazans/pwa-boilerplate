@@ -1,17 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as actions from '@/redux/actions';
+import { home as actions } from '@/redux/actions';
+import { Button } from '@/components';
 
-const Home = ({ reduxStoreCounter }) => (
-  <button
-    className="home-page-button"
-    onClick={() => props.changeReduxStoreCounter(reduxStoreCounter + 1)}
-  >
+const Home = ({ reduxStoreCounter, changeReduxStoreCounter }) => (
+  <Button onClick={() => changeReduxStoreCounter(reduxStoreCounter + 1)}>
     Change redux store ({reduxStoreCounter})
-  </button>
+  </Button>
 );
 
-const mapStateToProps = ({ reduxStoreCounter }) => ({ reduxStoreCounter });
+const mapStateToProps = ({ home }) => ({ reduxStoreCounter: home.reduxStoreCounter });
 
 const mapDispatchToProps = dispatch => ({
   changeReduxStoreCounter: reduxStoreCounter =>

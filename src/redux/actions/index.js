@@ -1,6 +1,3 @@
-const changeReduxStoreCounter = reduxStoreCounter => ({
-  type: 'CHANGE_REDUX_STORE_COUNTER',
-  reduxStoreCounter,
-});
+import * as home from './home';
 
-export { changeReduxStoreCounter };
+export { home };

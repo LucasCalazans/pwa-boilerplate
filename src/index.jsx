@@ -5,7 +5,8 @@ import { Helmet } from 'react-helmet';
 import { Provider } from 'react-redux';
 import store from '@/redux/store';
 import Routes from '@/routes';
-import App from '@/components/App';
+import App from '@/containers/App';
+import GlobalStyles from '@/components';
 import './assets/css/styles.scss';
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
           <meta name="theme-color" content="#333" />
         </Helmet>
         <Routes />
+        <GlobalStyles />
       </App>
     </Provider>
   </Router>,
