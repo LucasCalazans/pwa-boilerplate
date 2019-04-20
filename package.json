@@ -6,7 +6,8 @@
     "scripts": {
         "start": "webpack-dev-server --mode development --port 3000 --https --host=0.0.0.0 --open",
         "build": "webpack --mode production",
-        "test": "jest"
+        "test": "jest",
+        "storybook": "start-storybook -p 3001 -c .storybook"
     },
     "dependencies": {
         "@babel/polyfill": "^7.4.3",
@@ -29,6 +30,9 @@
         "@babel/plugin-transform-runtime": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
         "@babel/preset-react": "^7.0.0",
+        "@storybook/addon-actions": "^5.0.10",
+        "@storybook/addon-notes": "^5.0.10",
+        "@storybook/react": "^5.0.10",
         "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^24.7.1",
         "babel-loader": "^8.0.5",
