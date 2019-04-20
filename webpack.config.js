@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (env, args) => {
   const development = args.mode === 'development';
@@ -16,6 +17,7 @@ module.exports = (env, args) => {
     },
     entry: ['@babel/polyfill', './src/index.jsx'],
     plugins: [
+      new Dotenv(),
       new HtmlWebpackPlugin({
         filename: 'index.html',
         inject: 'head',

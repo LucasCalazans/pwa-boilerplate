@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { home as actions } from '@/redux/actions';
 import { Button } from '@/components';
+import BaseApi from '@/api/BaseApi';
 
 const Home = ({ reduxStoreCounter, changeReduxStoreCounter }) => (
   <Button onClick={() => changeReduxStoreCounter(reduxStoreCounter + 1)}>

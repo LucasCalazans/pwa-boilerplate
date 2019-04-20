@@ -1,6 +1,6 @@
 class BaseApi {
   static getBaseUrl() {
-    return process.env.BASE_HOST;
+    return process.env.API;
   }
 
   static getUrl(url) {
